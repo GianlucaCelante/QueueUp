@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "810563677010",
+    "project_id": "queueup-33f3b",
+    "storage_bucket": "queueup-33f3b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:810563677010:android:27ad3511fe38bd9516688b",
+        "android_client_info": {
+          "package_name": "it.pioppi.queueup"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "810563677010-pekc65pops6qqoitlk3aj9o4ccp1htvp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBR2U9jk3n2MnK6AoSJv7M0xrUUKUuP5jY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "810563677010-pekc65pops6qqoitlk3aj9o4ccp1htvp.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

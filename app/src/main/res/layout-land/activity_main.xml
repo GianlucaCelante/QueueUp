@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:visibility="visible"
+    tools:context=".MainActivity"
+    android:background="#FECB05"
+    tools:visibility="visible">
+
+    <androidx.gridlayout.widget.GridLayout
+        android:id="@+id/layoutCalculator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:columnCount="3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/plus"
+        app:layout_constraintStart_toEndOf="@+id/minus">
+
+        <Button
+            android:id="@+id/seven"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/seven"
+            android:textStyle="bold"
+            android:fontFamily="@font/cerapro_bold"
+            android:backgroundTint="#ff8c00"/>
+
+        <Button
+            android:id="@+id/eight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:textStyle="bold"
+            android:fontFamily="@font/cerapro_bold"
+            android:backgroundTint="#ff8c00"
+            android:text="@string/eight" />
+
+        <Button
+            android:id="@+id/nine"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:fontFamily="@font/cerapro_bold"
+            android:backgroundTint="#ff8c00"
+            android:text="@string/nine" />
+
+        <Button
+            android:id="@+id/four"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:fontFamily="@font/cerapro_bold"
+            android:backgroundTint="#ff8c00"
+            android:text="@string/four" />
+
+        <Button
+            android:id="@+id/five"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:textStyle="bold"
+            android:fontFamily="@font/cerapro_bold"
+            android:backgroundTint="#ff8c00"
+            android:text="@string/five" />
+
+        <Button
+            android:id="@+id/six"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:fontFamily="@font/cerapro_bold"
+            android:backgroundTint="#ff8c00"
+            android:text="@string/six" />
+
+        <Button
+            android:id="@+id/one"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:fontFamily="@font/cerapro_bold"
+            android:backgroundTint="#ff8c00"
+            android:text="@string/one" />
+
+        <Button
+            android:id="@+id/two"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:textStyle="bold"
+            android:fontFamily="@font/cerapro_bold"
+            android:backgroundTint="#ff8c00"
+            android:text="@string/two" />
+
+        <Button
+            android:id="@+id/three"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:fontFamily="@font/cerapro_bold"
+            android:backgroundTint="#ff8c00"
+            android:text="@string/three" />
+
+        <Button
+            android:id="@+id/canc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:fontFamily="@font/cerapro_bold"
+            android:backgroundTint="#ff8c00"
+            android:layout_marginBottom="5dp"
+            android:text="@string/canc" />
+
+        <Button
+            android:id="@+id/zero"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:textStyle="bold"
+            android:fontFamily="@font/cerapro_bold"
+            android:backgroundTint="#ff8c00"
+            android:layout_marginBottom="5dp"
+            android:text="@string/zero" />
+
+        <Button
+            android:id="@+id/send"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:fontFamily="@font/cerapro_bold"
+            android:backgroundTint="#ff8c00"
+            android:layout_marginBottom="5dp"
+            android:text="@string/tick" />
+    </androidx.gridlayout.widget.GridLayout>
+
+    <LinearLayout
+        android:id="@+id/layoutDisplaySolution"
+        android:layout_width="0dp"
+        android:layout_height="110dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="1dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/currentNumber"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/zero"
+            android:textAlignment="center"
+            android:textSize="70sp"
+            android:textStyle="bold"
+            android:fontFamily="@font/cerapro_bold"
+            android:textColor="@color/white"
+            android:background="#FECB05"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/minus"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="30dp"
+        android:text="@string/minus"
+        android:textSize="50sp"
+        android:textStyle="bold"
+        android:fontFamily="@font/cerapro_bold"
+        app:layout_constraintBottom_toBottomOf="@+id/layoutCalculator"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/layoutCalculator"
+        android:backgroundTint="#ff8c00"
+        android:layout_marginLeft="30dp" />
+
+    <Button
+        android:id="@+id/plus"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:text="@string/plus"
+        android:layout_marginEnd="30dp"
+        android:textSize="50sp"
+        android:textStyle="bold"
+        android:fontFamily="@font/cerapro_bold"
+        android:backgroundTint="#ff8c00"
+        app:layout_constraintBottom_toBottomOf="@+id/layoutCalculator"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/layoutCalculator"
+        android:layout_marginRight="30dp" />
+
+    <TextView
+        android:id="@+id/newNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxLength="3"
+        android:text="0"
+        android:textStyle="bold"
+        android:fontFamily="@font/cerapro_bold"
+        android:textColor="#808080"
+        app:layout_constraintBottom_toTopOf="@+id/layoutCalculator"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/layoutDisplaySolution"
+        android:textSize="20sp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
